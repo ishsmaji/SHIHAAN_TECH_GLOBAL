@@ -1,5 +1,7 @@
+/* Importing the Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
+/* Global styling for all elements */
 * {
     font-family: Poppins, sans-serif;
     margin: 0;
@@ -7,6 +9,7 @@
     box-sizing: border-box;
 }
 
+/* Styling for the main section */
 section {
     display: flex;
     justify-content: center;
@@ -19,6 +22,7 @@ section {
     padding: 50px;
 }
 
+/* Styling for the main container */
 .container {
     position: relative;
     width: calc(100% - 100px);
@@ -33,6 +37,7 @@ section {
     padding: 50px;
 }
 
+/* Styling for the header */
 header {
     position: absolute;
     top: -40px;
@@ -51,22 +56,26 @@ header {
     border-left: 1px solid rgba(255, 255, 255, 0.25);
 }
 
+/* Styling for the logo within the header */
 header .logo {
-    
+    color: #8a2435;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
 }
 
+/* Styling for the navigation menu within the header */
 header ul {
     display: flex;
 }
 
+/* Styling for each list item within the navigation menu */
 header ul li {
     list-style: none;
     margin: 0 10px;
 }
 
+/* Styling for the anchor links within the navigation menu */
 header ul li a {
     text-decoration: none;
     font-weight: 500;
@@ -75,12 +84,13 @@ header ul li a {
     border-radius: 25px;
 }
 
-a.active,
-a:hover {
+/* Styling for active and hover states of anchor links */
+a.active, a:hover {
     background: #1b9bff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Styling for the main content area */
 .content {
     transform: translateX(-100px);
     max-width: 700px;
@@ -94,18 +104,21 @@ a:hover {
     padding-left: 110px;
 }
 
+/* Styling for the heading within the content area */
 .content h2 {
     font-size: 3em;
     color: #8a2435;
     animation-delay: 0.25s;
 }
 
+/* Styling for paragraphs within the content area */
 .content p {
     font-size: 1.2em;
-    color: black;
+    color: #882435;
     animation-delay: 0.5s;
 }
 
+/* Styling for anchor links within the content area */
 .content a {
     display: inline-block;
     padding: 15px 30px;
@@ -120,11 +133,13 @@ a:hover {
     animation-delay: 1s;
 }
 
+/* Styling for the image box */
 .imgBx {
     max-width: 400px;
     animation: animate 5s linear infinite;
 }
 
+/* Keyframes for animation */
 @keyframes animate {
     0%, 100% {
         transform: translateY(50px);
@@ -134,24 +149,27 @@ a:hover {
     }
 }
 
+/* Styling for animated elements */
 .anim {
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 }
 
+/* Styling for buttons with animation */
 .btn {
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 }
 
-.btn.active,
-a:hover {
+/* Styling for active and hover states of buttons and anchor links */
+.btn.active, a:hover {
     background: #1b9bff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Keyframes for move-up animation */
 @keyframes moveup {
     100% {
         opacity: 1;
@@ -159,6 +177,7 @@ a:hover {
     }
 }
 
+/* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
     section {
         padding: 30px;
