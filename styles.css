@@ -114,7 +114,7 @@ a.active, a:hover {
 /* Styling for paragraphs within the content area */
 .content p {
     font-size: 1.2em;
-    color: #882435;
+    color:black;
     animation-delay: 0.5s;
 }
 
